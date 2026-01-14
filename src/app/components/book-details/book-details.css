@@ -1,0 +1,37 @@
+.book-details-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px;
+    background-color: #f9f6f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-cover img {
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-info {
+    max-width: 700px;
+  }
+  
+  .book-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .book-info h4 {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .book-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  

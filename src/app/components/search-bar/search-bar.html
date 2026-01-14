@@ -1,0 +1,15 @@
+<div class="search-bar">
+  <input
+    type="text"
+    placeholder="Rechercher par titre..."
+    (input)="onTitleInput(titleInput.value)"
+    #titleInput
+  />
+
+  <input
+    type="number"
+    placeholder="Rechercher par année..."
+    (input)="onYearInput(yearInput.value)"
+    #yearInput
+  />
+</div>

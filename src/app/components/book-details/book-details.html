@@ -1,0 +1,22 @@
+<div class="book-details-container" *ngIf="book">
+  <div class="book-cover">
+    <img
+      *ngIf="book.covers?.length"
+      [src]="'https://covers.openlibrary.org/b/id/' + book.covers[0] + '-L.jpg'"
+      alt="{{ book.title }}"
+    />
+  </div>
+
+  <div class="book-info">
+    <h2>{{ book.title }}</h2>
+
+    <h4 *ngIf="book.subtitle">{{ book.subtitle }}</h4>
+
+    <p><strong>Année d’édition :</strong> {{ book.first_publish_year || 'Non précisée' }}</p>
+
+    <p><strong>Description :</strong></p>
+    <p>
+      {{ book.description?.value || book.description || 'Aucune description disponible.' }}
+    </p>
+  </div>
+</div>

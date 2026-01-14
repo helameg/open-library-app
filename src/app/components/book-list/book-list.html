@@ -1,0 +1,9 @@
+<div class="book-list-container">
+  <a class="book-card" *ngFor="let book of books" [routerLink]="['/books', extractBookId(book)]">
+    <img
+      [src]="'https://covers.openlibrary.org/b/id/' + (book.cover_id || book.cover_i) + '-M.jpg'"
+      alt="{{ book.title }}"
+    />
+    <div class="book-title">{{ book.title }}</div>
+  </a>
+</div>
